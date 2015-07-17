@@ -1,6 +1,6 @@
 'use strict'
 
-var EventEmitter = require('events')
+var EventEmitter = require('events').EventEmitter
 var pg = require('pg')
 var Promise = require('bluebird')
 
