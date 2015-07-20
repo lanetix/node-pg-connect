@@ -1,4 +1,4 @@
-pg-require-sql
+pg-connect
 ==============
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Circle CI](https://circleci.com/gh/lanetix/node-pg-connect.svg?style=svg)](https://circleci.com/gh/lanetix/node-pg-connect)
