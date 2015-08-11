@@ -39,6 +39,7 @@ module.exports = function (config) {
   }
 
   getConnection.withTransaction = withTransaction
+  getConnection.defaults = pg.defaults
   getConnection.end = pg.end.bind(pg)
   getConnection.on = eventEmitter.on.bind(eventEmitter)
 

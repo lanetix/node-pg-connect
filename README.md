@@ -44,7 +44,7 @@ then(function (results) {
 })
 ```
 
-Also, `getConnection.end` is equivalent to [`pg.end`](https://github.com/brianc/node-postgres/wiki/pg#end)
+Also, `getConnection.end` is equivalent to [`pg.end`](https://github.com/brianc/node-postgres/wiki/pg#end). Similarly, `getConnection.defaults` is equivalent to [`pg.defauts`](https://github.com/brianc/node-postgres/wiki/pg#pgdefaults).
 
 Testing
 -------
