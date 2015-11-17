@@ -4,7 +4,7 @@ var EventEmitter = require('events').EventEmitter
 var pg = require('pg')
 var Promise = require('bluebird')
 
-var connect = Promise.promisify(pg.connect, pg)
+var connect = Promise.promisify(pg.connect, { multiArgs: true, context: pg })
 
 module.exports = function (config) {
   var eventEmitter = new EventEmitter()
@@ -15,7 +15,7 @@ module.exports = function (config) {
       .spread(function (client, done) {
         eventEmitter.emit('client', client)
         close = done
-        return Promise.promisify(client.query, client)
+        return Promise.promisify(client.query, { context: client })
       })
       .disposer(function (query) {
         if (close) { close() }
