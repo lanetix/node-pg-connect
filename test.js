@@ -92,5 +92,7 @@ test('destroy the table', function (t) {
 })
 
 test('end it', function (t) {
+  t.plan(1)
   getConnection.end()
+  t.pass()
 })
