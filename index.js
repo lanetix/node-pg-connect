@@ -15,7 +15,11 @@ module.exports = function (config) {
       .spread(function (client, done) {
         eventEmitter.emit('client', client)
         close = done
-        return Promise.promisify(client.query, { context: client })
+
+        var promised = Promise.promisify(client.query, { context: client })
+        promised.nodeVersion = client.query
+
+        return promised
       })
       .disposer(function (query) {
         if (close) { close() }
