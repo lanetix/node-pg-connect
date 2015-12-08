@@ -4,7 +4,7 @@ pg-connect
 [![Circle CI](https://circleci.com/gh/lanetix/node-pg-connect.svg?style=svg)](https://circleci.com/gh/lanetix/node-pg-connect)
 [![Dependency Status](https://david-dm.org/lanetix/node-pg-connect.svg)](https://david-dm.org/lanetix/node-pg-connect)
 
-Connect to a postgres database with a promise api. Pretty much just an implementation of the suggestions in [the bluebird api](https://github.com/petkaantonov/bluebird/blob/master/API.md#resource-management) 
+Connect to a postgres database with a promise api. Pretty much just an implementation of the suggestions in [the bluebird api](http://bluebirdjs.com/docs/api/disposer.html) 
 
 Installation
 ------------
