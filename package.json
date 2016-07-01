@@ -25,7 +25,7 @@
   "homepage": "https://github.com/lanetix/node-pg-connect",
   "devDependencies": {
     "standard": "^7.0.1",
-    "tap": "^5.7.0"
+    "tap": "^6.0.0"
   },
   "dependencies": {
     "bluebird": "^3.0.5",
