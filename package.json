@@ -1,6 +1,6 @@
 {
   "name": "pg-connect",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Create a postgres connection and ensure it get's closed",
   "main": "index.js",
   "scripts": {
