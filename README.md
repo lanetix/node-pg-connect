@@ -1,3 +1,8 @@
+DEPRECATED
+==========
+
+As of [pg@6](https://github.com/brianc/node-postgres/blob/master/CHANGELOG.md#v600), node-postgres has promise suport out of the box. Do not use this package. It is no longer maintained!
+
 pg-connect
 ==============
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
